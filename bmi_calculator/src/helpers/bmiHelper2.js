@@ -1,7 +1,7 @@
-export const calculateBmi = (weight, height) => {
-  const bmiValue = (weight / (((height / 100) * height) / 100)).toFixed(2);
-  const bmiMessage = setBMIMessage(bmiValue);
-  return [bmiValue, bmiMessage];
+export const calculateBmi2 = (weightImp, heightImp) => {
+  const bmiValue_imperial = ((weightImp / (heightImp * heightImp)) * 703).toFixed(2);
+  const bmiMessageImp = setBMIMessage(bmiValue_imperial);
+  return [bmiValue_imperial, bmiMessageImp];
 };
 
 const setBMIMessage = finalBMI => {
